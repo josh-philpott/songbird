@@ -14,9 +14,6 @@ Note: Both Broadcaster and Listeners must have Spotify Premium accounts.
 
 MVP Todos
 
-- Generated Broadcast Short Code
-  - Display Link on Broadcast page
-  - /listen/broadcastId grabs that broadcast
 - Page Styling
   - Home Page
   - Broadcaster
@@ -34,6 +31,15 @@ MVP Todos
   - Broadcast and Listeners synced via Websockets
 - Support Multiple Concurrent Broadcasts
   - Broadcasts to be stored to Postgres or Redis (planning to start with Postgres and move to Redis if it becomes an issue in syncing)
+
+# Work Log
+
+7/20/19
+
+- PM2 ecosystem setup
+- Generated Broadcast Short Code
+  - Display Link on Broadcast page
+  - /listen/broadcastId grabs that broadcast
 
 # Current Thoughts
 

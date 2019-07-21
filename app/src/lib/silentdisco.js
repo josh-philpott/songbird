@@ -1,19 +1,18 @@
 import axios from 'axios'
 
+const spotifyApiBaseUrl = `${process.env.REACT_APP_API_URL}/api/spotify`
+
 const fetchSpotifyAccessToken = async (code, state) => {
-  const response = await axios.post(
-    'http://localhost:3001/api/spotify/getAccessToken',
-    {
-      code,
-      state
-    }
-  )
+  const response = await axios.post(`${spotifyApiBaseUrl}/getAccessToken`, {
+    code,
+    state
+  })
 
   return response.data
 }
 
 const fetchSpotifyAuthUri = async () => {
-  const response = await axios.get('http://localhost:3001/api/spotify/login')
+  const response = await axios.get(`${spotifyApiBaseUrl}/login`)
   return response.data
 }
 
