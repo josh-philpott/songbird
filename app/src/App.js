@@ -5,8 +5,6 @@ import Home from './components/Home'
 import Listener from './components/Listener'
 import SpotifyCallback from './components/SpotifyCallback'
 
-console.log(process.env.REACT_APP_API_URL)
-console.log(process.env)
 class AppRouter extends React.Component {
   render() {
     return (
