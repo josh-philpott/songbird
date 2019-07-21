@@ -18,7 +18,9 @@ const fetchSpotifyAccessToken = async (code, state) => {
 }
 
 const fetchSpotifyAuthUri = async () => {
-  const response = await axios.get(`${spotifyApiBaseUrl}/login`)
+  const response = await axios.get(`${spotifyApiBaseUrl}/login`, {
+    withCredentials: true
+  })
   return response.data
 }
 
